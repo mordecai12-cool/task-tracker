@@ -1,9 +1,9 @@
-import random
+secret = 7
 
-secret = random.randint(1, 100)   # picks a random whole number from 1 to 100
+print(secret)
 
-guess = int(input("Your guess: "))  # asks the user to type; int() turns the text into a number
+guess = int(input("Your guess: "))
 
-while guess != secret:            # repeats the indented code as long as the condition is True
-    print("Wrong!")
-    guess = int(input("Try again: "))
+print(guess)
+
+print(secret == guess)

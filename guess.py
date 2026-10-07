@@ -1,9 +1,12 @@
-secret = 7
+import random
 
-print(secret)
+secret = random.randint(1, 10)
 
 guess = int(input("Your guess: "))
 
-print(guess)
-
-print(secret == guess)
+if secret == guess:
+    print("You got it!")
+elif guess > secret:
+    print("Too high!")
+else:
+    print("Too low!")
